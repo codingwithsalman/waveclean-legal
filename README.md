@@ -15,7 +15,7 @@ These files are intended to be copied into a separate, public GitHub repository 
    - Source: **Deploy from a branch**
    - Branch: `main` / `/ (root)`
 5. After ~1 minute the policy will be live at:
-   `https://<your-github-username>.github.io/waveclean-legal/privacy`
+   `https://codingwithsalman.github.io/waveclean-legal/privacy`
 6. Update `PRIVACY_POLICY_URL` in `composeApp/src/commonMain/kotlin/com/cws/waveclean/AppInfo.kt` to that URL and commit.
 
 ## Updating
