@@ -1,9 +1,9 @@
 # Privacy Policy — WaveClean
 
 **Effective date:** 2026-05-08
-**Last updated:** 2026-05-08
+**Last updated:** 2026-05-12
 
-This Privacy Policy describes how the WaveClean mobile application ("WaveClean", "the App", "we", "us") handles information when you use it.
+This Privacy Policy describes how the WaveClean mobile application ("WaveClean", "the App", "we", "us"), published by **TriCode Studio**, handles information when you use it.
 
 WaveClean is a single-purpose utility that plays low-frequency audio tones through the device speaker to help dislodge water and dust, and to test speaker output. **WaveClean does not require an account, does not record audio, and does not ask for personal information.**
 
@@ -108,6 +108,8 @@ If we materially change this policy, we will update the "Last updated" date abov
 
 ## 9. Contact
 
-For privacy questions, deletion requests, or any other concern about this policy, email:
+For privacy questions, deletion requests, or any other concern about this policy, contact:
 
-**codingwithsalman@gmail.com**
+
+**TriCode Studio**
+**tricodestudioofficial@gmail.com**
