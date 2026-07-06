@@ -4,20 +4,18 @@ Source for the public privacy policy that the App and the stores link to.
 
 ## Hosting
 
-These files are intended to be copied into a separate, public GitHub repository (suggested name: `waveclean-legal`) and served via GitHub Pages.
+The privacy policy is published on the TriCode Studio website and is served at:
+
+`https://www.tricodestudio.com/privacy/waveclean.html`
+
+This URL is wired into `PRIVACY_POLICY_URL` in `composeApp/src/commonMain/kotlin/com/cws/waveclean/AppInfo.kt` and into both store listings (`store-assets/listing/`).
 
 ### Publishing steps
 
-1. Create a new public repo on GitHub: `waveclean-legal`.
-2. Copy `index.md` and `privacy.md` into the root of that repo.
-3. Commit and push to `main`.
-4. In the repo's **Settings → Pages**, set:
-   - Source: **Deploy from a branch**
-   - Branch: `main` / `/ (root)`
-5. After ~1 minute the policy will be live at:
-   `https://codingwithsalman.github.io/waveclean-legal/privacy`
-6. Update `PRIVACY_POLICY_URL` in `composeApp/src/commonMain/kotlin/com/cws/waveclean/AppInfo.kt` to that URL and commit.
+1. Render `privacy.md` to the HTML page hosted at the URL above (the site build/CMS handles this).
+2. Deploy the site so the updated policy is live before any app release that changes data collection.
+3. Confirm the live page matches `legal/privacy.md` and that the in-app **Settings → Privacy Policy** link opens it.
 
 ## Updating
 
-Treat the `legal/` folder in this repo as the source of truth. When the policy changes, update `legal/privacy.md` here, then sync the change into `waveclean-legal` and bump the **Last updated** date inside the file.
+Treat the `legal/` folder in this repo as the source of truth. When the policy changes, update `legal/privacy.md` here, bump the **Last updated** date inside the file, then republish the page at the URL above.

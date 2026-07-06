@@ -1,7 +1,7 @@
 # Privacy Policy — WaveClean
 
 **Effective date:** 2026-05-08
-**Last updated:** 2026-05-12
+**Last updated:** 2026-07-01
 
 This Privacy Policy describes how the WaveClean mobile application ("WaveClean", "the App", "we", "us"), published by **TriCode Studio**, handles information when you use it.
 
@@ -14,8 +14,10 @@ We do not collect, store, or transmit any of the following:
 - Your name, email address, phone number, or postal address
 - Account credentials (we have no login)
 - Microphone audio, photos, contacts, calendar, or files
-- Precise or coarse location
+- Precise (GPS-level) location
 - Health, fitness, or biometric data
+
+Our advertising and analytics providers do derive an **approximate, IP-based location at the country/region level** — this is described in Section 2.
 
 ## 2. Information collected by the App and our service providers
 
@@ -53,15 +55,33 @@ Payment for the Premium purchase is processed entirely by Apple App Store (on iO
 - Apple: https://www.apple.com/legal/privacy/
 - Google: https://policies.google.com/privacy
 
-### 2.4 Crash diagnostics
+### 2.4 Google Firebase (crash reporting, analytics, configuration)
 
-The current version of WaveClean does **not** include a crash-reporting SDK. Future versions may include Firebase Crashlytics; if so, this policy will be updated and the change announced in release notes before the SDK is shipped.
+WaveClean uses Google Firebase to diagnose crashes, understand how the app is used, and manage feature configuration. Firebase does **not** receive your name, email, or payment details. The following Firebase services are active:
+
+**Firebase Crashlytics** collects diagnostics when the app closes unexpectedly, including:
+
+- Stack traces and the sequence of events leading up to the crash
+- Device model, operating-system version, language, and available memory/storage at the time of the crash
+- A random Crashlytics installation identifier that is not linked to your identity
+
+**Firebase Analytics** collects aggregate, pseudonymous usage data to help us improve the app, including:
+
+- App events such as launches, screen views, and cleans started or completed
+- Device model, OS version, app version, and language
+- A pseudonymous app-instance identifier and the Advertising ID (where the user has consented)
+- Approximate (IP-derived) location at the country/region level
+
+**Firebase Remote Config** downloads configuration values (such as default settings and feature flags) using that same pseudonymous app-instance identifier; it does not collect additional personal data.
+
+You can limit analytics collection through your device's advertising/privacy settings, and your EEA/UK/Switzerland ad-personalisation choice (Section 2.1) also applies. For Google's Firebase data handling, see: https://firebase.google.com/support/privacy
 
 ## 3. How the data is used
 
 The data described above is used only to:
 
 - Show ads (AdMob)
+- Diagnose crashes and improve stability and features (Firebase Crashlytics, Analytics, Remote Config)
 - Verify and restore your in-app purchase (RevenueCat, Apple, Google)
 - Comply with applicable advertising-consent law (UMP)
 
@@ -96,7 +116,7 @@ We do not "sell" personal information for money. AdMob's behavioural ad signals 
 
 ## 6. Data retention
 
-We retain only what our service providers retain on our behalf. RevenueCat retains your anonymous purchase record indefinitely so that "Restore Purchases" continues to work. AdMob's retention is governed by Google's policies (linked above).
+We retain only what our service providers retain on our behalf. RevenueCat retains your anonymous purchase record indefinitely so that "Restore Purchases" continues to work. AdMob's and Firebase's retention are governed by Google's policies (linked above); Firebase Analytics data is retained according to the retention window configured in our Firebase project, and Crashlytics reports are retained by Google for a limited period.
 
 ## 7. Security
 
